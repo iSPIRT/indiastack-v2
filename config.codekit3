@@ -31,6 +31,29 @@
       "oAP" : "\/build\/fonts\/ttcommons_medium.woff",
       "oF" : 0
     },
+    "\/img\/home_bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 600197,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/home_bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/india-art.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/img\/india-art.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/indiastack.png" : {
       "ft" : 32768,
       "iS" : 14575,
@@ -43,6 +66,52 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/img\/play.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/img\/play.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/timeline_bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 1177858,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/timeline_bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/video_bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 259987,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/video_bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/wave_bg.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/img\/wave_bg.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/index.html" : {
       "cB" : 0,
