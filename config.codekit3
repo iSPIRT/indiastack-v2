@@ -9,6 +9,41 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/build" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/build\/build",
+      "oF" : 0
+    },
+    "\/fonts\/ttcommons_demiBold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/fonts\/ttcommons_demiBold.woff",
+      "oF" : 0
+    },
+    "\/fonts\/ttcommons_medium.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/fonts\/ttcommons_medium.woff",
+      "oF" : 0
+    },
+    "\/img\/indiastack.png" : {
+      "ft" : 32768,
+      "iS" : 14575,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/indiastack.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -42,6 +77,34 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/scss\/_desktop.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/_desktop.css",
+      "oF" : 0,
+      "oS" : 2,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/_mobile.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/_mobile.css",
+      "oF" : 0,
+      "oS" : 2,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/_settings.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -50,13 +113,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/build\/scss\/_settings.css",
+      "oAP" : "\/build\/_settings.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 2,
       "pg" : 0,
       "sct" : 0
     },
-    "\/scss\/app.scss" : {
+    "\/scss\/style.scss" : {
       "aP" : 0,
       "bl" : 0,
       "dP" : 10,
@@ -64,9 +127,9 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "build\/css\/app.css",
+      "oAP" : "\/build\/style.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 2,
       "pg" : 0,
       "sct" : 0
     },
@@ -2037,15 +2100,15 @@
     "languageDefaultsSASS" : {
       "autoOutputAction" : 0,
       "autoOutputPathFilenamePattern" : "*.css",
-      "autoOutputPathRelativePath" : "..\/css",
+      "autoOutputPathRelativePath" : "..\/",
       "autoOutputPathReplace1" : "sass",
       "autoOutputPathReplace2" : "css",
-      "autoOutputPathStyle" : 0,
+      "autoOutputPathStyle" : 2,
       "compilerType" : 0,
       "cssoStyle" : 0,
       "decimalPrecision" : 10,
       "emitCharset" : 1,
-      "outputStyle" : 0,
+      "outputStyle" : 2,
       "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 0,
       "shouldRunBless" : 0,

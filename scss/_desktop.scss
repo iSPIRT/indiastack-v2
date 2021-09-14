@@ -1,0 +1,52 @@
+
+
+// Global
+// @font-face {
+// font-family: 'TT Commons Regular';
+// font-style: normal;
+// font-weight: normal;
+// src: local('TT Commons Regular'), url('TT Commons Regular.woff') format('woff');
+// }
+
+@font-face {
+font-family: 'TT Commons DemiBold';
+font-style: normal;
+font-weight: normal;
+src: local('TT Commons DemiBold'), url('ttcommons_demiBold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'TT Commons Medium';
+font-style: normal;
+font-weight: normal;
+src: local('TT Commons Medium'), url('fonts/ttcommons_medium.woff') format('woff');
+}
+
+// Color
+$orange: #F48F20;
+$black: #000000;
+
+// Mixin
+
+@mixin absolute-center {display: flex; justify-content: center; align-items: center;}
+@mixin font-normal {font-family: 'Manrope', sans-serif; font-weight: 500;}
+@mixin font-bold {font-family: 'Manrope', sans-serif; font-weight: 800;}
+@mixin font-title {font-family: 'TT Commons DemiBold'; font-style: normal; font-weight: normal;}
+@mixin font-title-medium {font-family: 'TT Commons Medium'; font-style: normal; font-weight: normal;}
+
+// ------- Typography
+
+body {@include font-normal; color: $black;}
+p {@include font-normal; color: $black; font-size: 18px;}
+
+h1, h2, h3, h4, h5, h6 {@include font-title; color: $black;}
+
+h1, h2.title {font-size: 50px; line-height: normal;}
+h2 {font-size: 30px; line-height: normal;}
+
+.button {width: 100%; border-radius: 5px; background: #ECF5FC; border: 1px solid #C0DFF4; border-bottom: 3px solid #C0DFF4; @include font-bold; font-size: 14px; letter-spacing: 1.4px; color: #17284D; text-transform: uppercase; padding: 15px;
+  &:hover {background: #17284D; border-color: #17284D;}
+}
+
+// Header
