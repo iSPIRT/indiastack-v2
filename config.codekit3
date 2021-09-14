@@ -67,11 +67,31 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/next.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/img\/next.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/play.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/build\/img\/play.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/previous.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/img\/previous.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -223,7 +243,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 653295318.97572899
+    "lastBuiltDate" : 653318630.697873
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

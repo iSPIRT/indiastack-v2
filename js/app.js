@@ -17,6 +17,15 @@ $(document).ready(function(){
     arrows: false,
     infinite: false,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 1
   });
+
+  $('.timeline-next').click(function(){
+    $('.timeline-wrap').slick('slickNext');
+  });
+
+  $('.timeline-previous').click(function(){
+    $('.timeline-wrap').slick('slickPrev');
+  });
+
 });

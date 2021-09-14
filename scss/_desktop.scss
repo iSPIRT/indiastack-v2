@@ -109,10 +109,23 @@ strong {@include font-bold;}
   p.description {margin: 0px; @include font-bold; font-size: 20px; line-height: normal; border-left: 4px solid #F0F0F0; padding: 0px 30px 0px 15px; height: 81px;}
 }
 
-#timeline {padding: 100px 0px; background-image: url('img/timeline_bg.jpg'); background-size: cover; background-position: center;
-  .timestamp{
-    h2 {color: #ffffff;}
+#timeline {padding: 100px 0px 0px 0px; background-image: url('img/timeline_bg.jpg'); background-size: cover; background-position: center;
+  .timeline-wrap {margin-left: -40px; margin-right: -40px;}
+  .timestamp{padding: 0px 40px 40px 40px;
+    h2 {color: #ffffff; font-size: 83px;}
     p {margin: 0px; color: #ffffff; @include font-bold; font-size: 20px; line-height: normal;}
   }
+  .timeline-navigation {background: rgba(0,0,0,0.4); backdrop-filter: blur(7px);
+    .nav-wrap {display:flex; justify-content: space-between; align-content: center;}
+    p {margin: 0px; color: #ffffff; @include font-bold; font-size: 20px; line-height: normal;}
+    .previous, .next {padding: 36px 0px; cursor: pointer;
+      img {width: 22px; height: auto; position: relative; top: -1px;}
+    }
+    .previous img {margin-right: 20px}
+    .next img {margin-left: 20px}
+  }
+}
 
+#site-footer {height: 400px; width: 100%; background: #000000; padding: 100px 0px;
+  h2 {color: #ffffff;}
 }
