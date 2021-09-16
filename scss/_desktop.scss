@@ -12,7 +12,7 @@
 font-family: 'TT Commons DemiBold';
 font-style: normal;
 font-weight: normal;
-src: local('TT Commons DemiBold'), url('ttcommons_demiBold.woff') format('woff');
+src: local('TT Commons DemiBold'), url('fonts/ttcommons_demiBold.woff') format('woff');
 }
 
 
@@ -54,7 +54,7 @@ strong {@include font-bold;}
 
 // Header
 
-.top-bar {height: 80px; position: fixed;top: 0px; left: 0px; width: 100%; background: rgba(255,255,255,0.9); z-index: 999999; border-radius: 0px 0px 20px 20px; overflow: hidden; padding: 0px 50px; backdrop-filter: blur(4px);
+.top-bar {height: 80px; position: fixed;top: 0px; left: 0px; width: 100%; background: rgba(255,255,255,0.9); z-index: 999; border-radius: 0px 0px 20px 20px; overflow: hidden; padding: 0px 50px; backdrop-filter: blur(4px);
   &:before {content: ""; width: 20px; height: 80px; position: absolute; left: 0px; top: 0px; background: url('img/india-art.svg'); background-size: 20px 80px; background-repeat: no-repeat; border-radius: 0px 0px 0px 20px; overflow: hidden;}
   .logo-wrap {
     img {height: 38px; }
@@ -68,7 +68,7 @@ strong {@include font-bold;}
 
 // Home
 
-.indiastack-is {height: 500px; background: url("img/home_bg.jpg"); background-size: cover; background-position: top center; position: relative; z-index: 1;
+.indiastack-is {height: 500px; background: url("img/home_bg.jpg"); background-size: cover; background-position: top center; position: relative; z-index: 1; padding-top: 80px;
   &:after {content: ""; position: absolute; width: 100%; height: 100%; left: 0px; bottom: 0px; background: url("img/wave_bg.svg"); background-size: 100%; background-repeat: no-repeat; background-position: bottom center; z-index: -1;}
   .wrap {display: flex; height: 500px; flex-direction: column; justify-content: center;}
   .title {text-align: center; font-size: 83px; line-height: 83px; margin: 0px; color: #ffffff; text-shadow: 0px 7px 14px rgba(194,117,0,.3);}
