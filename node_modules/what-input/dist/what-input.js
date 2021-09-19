@@ -1,6 +1,6 @@
 /**
  * what-input - A global utility for tracking the current input method (mouse, keyboard or touch).
- * @version v5.2.10
+ * @version v5.1.2
  * @link https://github.com/ten1seven/what-input
  * @license MIT
  */
@@ -111,14 +111,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	  // last used input intent
 	  var currentIntent = currentInput;
 
-	  // UNIX timestamp of current event
-	  var currentTimestamp = Date.now();
+	  // check for sessionStorage support
+	  // then check for session variables and use if available
+	  try {
+	    if (window.sessionStorage.getItem('what-input')) {
+	      currentInput = window.sessionStorage.getItem('what-input');
+	    }
 
-	  // check for a `data-whatpersist` attribute on either the `html` or `body` elements, defaults to `true`
-	  var shouldPersist = 'false';
+	    if (window.sessionStorage.getItem('what-intent')) {
+	      currentIntent = window.sessionStorage.getItem('what-intent');
+	    }
+	  } catch (e) {}
+
+	  // event buffer timer
+	  var eventTimer = null;
 
 	  // form input types
-	  var formInputs = ['button', 'input', 'select', 'textarea'];
+	  var formInputs = ['input', 'select', 'textarea'];
 
 	  // empty array for holding callback functions
 	  var functionList = [];
@@ -144,11 +153,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    MSPointerMove: 'pointer',
 	    pointerdown: 'pointer',
 	    pointermove: 'pointer',
-	    touchstart: 'touch',
-	    touchend: 'touch'
+	    touchstart: 'touch'
 
-	    // boolean: true if the page is being scrolled
-	  };var isScrolling = false;
+	    // boolean: true if touch buffer is active
+	  };var isBuffering = false;
+
+	  // boolean: true if the page is being scrolled
+	  var isScrolling = false;
 
 	  // store current mouse position
 	  var mousePos = {
@@ -173,8 +184,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    window.addEventListener('test', null, opts);
 	  } catch (e) {}
-	  // fail silently
-
 
 	  /*
 	   * set up
@@ -185,6 +194,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    inputMap[detectWheel()] = 'mouse';
 
 	    addListeners();
+	    doUpdate('input');
+	    doUpdate('intent');
 	  };
 
 	  /*
@@ -196,8 +207,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    // can only demonstrate potential, but not actual, interaction
 	    // and are treated separately
 	    var options = supportsPassive ? { passive: true } : false;
-
-	    document.addEventListener('DOMContentLoaded', setPersist);
 
 	    // pointer events (mouse, pen, touch)
 	    if (window.PointerEvent) {
@@ -213,7 +222,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      // touch events
 	      if ('ontouchstart' in window) {
-	        window.addEventListener('touchstart', setInput, options);
+	        window.addEventListener('touchstart', eventBuffer, options);
 	        window.addEventListener('touchend', setInput);
 	      }
 	    }
@@ -222,76 +231,55 @@ return /******/ (function(modules) { // webpackBootstrap
 	    window.addEventListener(detectWheel(), setIntent, options);
 
 	    // keyboard events
-	    window.addEventListener('keydown', setInput);
-	    window.addEventListener('keyup', setInput);
+	    window.addEventListener('keydown', eventBuffer);
+	    window.addEventListener('keyup', eventBuffer);
 
 	    // focus events
 	    window.addEventListener('focusin', setElement);
 	    window.addEventListener('focusout', clearElement);
 	  };
 
-	  // checks if input persistence should happen and
-	  // get saved state from session storage if true (defaults to `false`)
-	  var setPersist = function setPersist() {
-	    shouldPersist = !(docElem.getAttribute('data-whatpersist') || document.body.getAttribute('data-whatpersist') === 'false');
-
-	    if (shouldPersist) {
-	      // check for session variables and use if available
-	      try {
-	        if (window.sessionStorage.getItem('what-input')) {
-	          currentInput = window.sessionStorage.getItem('what-input');
-	        }
-
-	        if (window.sessionStorage.getItem('what-intent')) {
-	          currentIntent = window.sessionStorage.getItem('what-intent');
-	        }
-	      } catch (e) {
-	        // fail silently
-	      }
-	    }
-
-	    // always run these so at least `initial` state is set
-	    doUpdate('input');
-	    doUpdate('intent');
-	  };
-
 	  // checks conditions before updating new input
 	  var setInput = function setInput(event) {
-	    var eventKey = event.which;
-	    var value = inputMap[event.type];
+	    // only execute if the event buffer timer isn't running
+	    if (!isBuffering) {
+	      var eventKey = event.which;
+	      var value = inputMap[event.type];
 
-	    if (value === 'pointer') {
-	      value = pointerType(event);
-	    }
+	      if (value === 'pointer') {
+	        value = pointerType(event);
+	      }
 
-	    var ignoreMatch = !specificMap.length && ignoreMap.indexOf(eventKey) === -1;
+	      var ignoreMatch = !specificMap.length && ignoreMap.indexOf(eventKey) === -1;
 
-	    var specificMatch = specificMap.length && specificMap.indexOf(eventKey) !== -1;
+	      var specificMatch = specificMap.length && specificMap.indexOf(eventKey) !== -1;
 
-	    var shouldUpdate = value === 'keyboard' && eventKey && (ignoreMatch || specificMatch) || value === 'mouse' || value === 'touch';
+	      var shouldUpdate = value === 'keyboard' && eventKey && (ignoreMatch || specificMatch) || value === 'mouse' || value === 'touch';
 
-	    // prevent touch detection from being overridden by event execution order
-	    if (validateTouch(value)) {
-	      shouldUpdate = false;
-	    }
+	      if (currentInput !== value && shouldUpdate) {
+	        currentInput = value;
 
-	    if (shouldUpdate && currentInput !== value) {
-	      currentInput = value;
+	        try {
+	          window.sessionStorage.setItem('what-input', currentInput);
+	        } catch (e) {}
 
-	      persistInput('input', currentInput);
-	      doUpdate('input');
-	    }
+	        doUpdate('input');
+	      }
 
-	    if (shouldUpdate && currentIntent !== value) {
-	      // preserve intent for keyboard interaction with form fields
-	      var activeElem = document.activeElement;
-	      var notFormInput = activeElem && activeElem.nodeName && (formInputs.indexOf(activeElem.nodeName.toLowerCase()) === -1 || activeElem.nodeName.toLowerCase() === 'button' && !checkClosest(activeElem, 'form'));
+	      if (currentIntent !== value && shouldUpdate) {
+	        // preserve intent for keyboard typing in form fields
+	        var activeElem = document.activeElement;
+	        var notFormInput = activeElem && activeElem.nodeName && formInputs.indexOf(activeElem.nodeName.toLowerCase()) === -1;
 
-	      if (notFormInput) {
-	        currentIntent = value;
+	        if (notFormInput) {
+	          currentIntent = value;
 
-	        persistInput('intent', currentIntent);
-	        doUpdate('intent');
+	          try {
+	            window.sessionStorage.setItem('what-intent', currentIntent);
+	          } catch (e) {}
+
+	          doUpdate('intent');
+	        }
 	      }
 	    }
 	  };
@@ -305,21 +293,26 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  // updates input intent for `mousemove` and `pointermove`
 	  var setIntent = function setIntent(event) {
-	    var value = inputMap[event.type];
-
-	    if (value === 'pointer') {
-	      value = pointerType(event);
-	    }
-
 	    // test to see if `mousemove` happened relative to the screen to detect scrolling versus mousemove
 	    detectScrolling(event);
 
-	    // only execute if scrolling isn't happening
-	    if ((!isScrolling && !validateTouch(value) || isScrolling && event.type === 'wheel' || event.type === 'mousewheel' || event.type === 'DOMMouseScroll') && currentIntent !== value) {
-	      currentIntent = value;
+	    // only execute if the event buffer timer isn't running
+	    // or scrolling isn't happening
+	    if (!isBuffering && !isScrolling) {
+	      var value = inputMap[event.type];
+	      if (value === 'pointer') {
+	        value = pointerType(event);
+	      }
 
-	      persistInput('intent', currentIntent);
-	      doUpdate('intent');
+	      if (currentIntent !== value) {
+	        currentIntent = value;
+
+	        try {
+	          window.sessionStorage.setItem('what-intent', currentIntent);
+	        } catch (e) {}
+
+	        doUpdate('intent');
+	      }
 	    }
 	  };
 
@@ -346,14 +339,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	    docElem.removeAttribute('data-whatclasses');
 	  };
 
-	  var persistInput = function persistInput(which, value) {
-	    if (shouldPersist) {
-	      try {
-	        window.sessionStorage.setItem('what-' + which, value);
-	      } catch (e) {
-	        // fail silently
-	      }
-	    }
+	  // buffers events that frequently also fire mouse events
+	  var eventBuffer = function eventBuffer(event) {
+	    // set the current input
+	    setInput(event);
+
+	    // clear the timer if it happens to be running
+	    window.clearTimeout(eventTimer);
+
+	    // set the isBuffering to `true`
+	    isBuffering = true;
+
+	    // run the timer
+	    eventTimer = window.setTimeout(function () {
+	      // if the timer runs out, set isBuffering back to `false`
+	      isBuffering = false;
+	    }, 100);
 	  };
 
 	  /*
@@ -369,21 +370,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  };
 
-	  // prevent touch detection from being overridden by event execution order
-	  var validateTouch = function validateTouch(value) {
-	    var timestamp = Date.now();
-
-	    var touchIsValid = value === 'mouse' && currentInput === 'touch' && timestamp - currentTimestamp < 200;
-
-	    currentTimestamp = timestamp;
-
-	    return touchIsValid;
-	  };
-
 	  // detect version of mouse wheel event to use
-	  // via https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event
+	  // via https://developer.mozilla.org/en-US/docs/Web/Events/wheel
 	  var detectWheel = function detectWheel() {
-	    var wheelType = null;
+	    var wheelType = void 0;
 
 	    // Modern browsers support "wheel"
 	    if ('onwheel' in document.createElement('div')) {
@@ -416,36 +406,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 
 	  var detectScrolling = function detectScrolling(event) {
-	    if (mousePos.x !== event.screenX || mousePos.y !== event.screenY) {
+	    if (mousePos['x'] !== event.screenX || mousePos['y'] !== event.screenY) {
 	      isScrolling = false;
 
-	      mousePos.x = event.screenX;
-	      mousePos.y = event.screenY;
+	      mousePos['x'] = event.screenX;
+	      mousePos['y'] = event.screenY;
 	    } else {
 	      isScrolling = true;
-	    }
-	  };
-
-	  // manual version of `closest()`
-	  var checkClosest = function checkClosest(elem, tag) {
-	    var ElementPrototype = window.Element.prototype;
-
-	    if (!ElementPrototype.matches) {
-	      ElementPrototype.matches = ElementPrototype.msMatchesSelector || ElementPrototype.webkitMatchesSelector;
-	    }
-
-	    if (!ElementPrototype.closest) {
-	      do {
-	        if (elem.matches(tag)) {
-	          return elem;
-	        }
-
-	        elem = elem.parentElement || elem.parentNode;
-	      } while (elem !== null && elem.nodeType === 1);
-
-	      return null;
-	    } else {
-	      return elem.closest(tag);
 	    }
 	  };
 
@@ -503,10 +470,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (position || position === 0) {
 	        functionList.splice(position, 1);
 	      }
-	    },
-
-	    clearStorage: function clearStorage() {
-	      window.sessionStorage.clear();
 	    }
 	  };
 	}();
