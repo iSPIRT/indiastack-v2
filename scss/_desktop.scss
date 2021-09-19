@@ -38,7 +38,7 @@ $black: #000000;
 // ------- Typography
 
 body {@include font-normal; color: $black;}
-p {@include font-normal; color: $black; font-size: 18px;}
+p, li {@include font-normal; color: $black; font-size: 18px;}
 
 h1, h2, h3, h4, h5, h6 {@include font-title; color: $black;}
 
@@ -47,6 +47,8 @@ h2 {font-size: 30px; line-height: normal;}
 
 h3 {@include font-title-medium; font-size: 38px; line-height: 58px;}
 strong {@include font-bold;}
+
+a {color: $orange;}
 
 .button {border-radius: 4px; background: #ffffff; border: 2px solid #F3F3F3; @include font-title-medium; font-size: 18px; color: $orange; padding: 9px 20px;
   &:hover {background: $orange; border-color: $orange;}
@@ -133,4 +135,38 @@ strong {@include font-bold;}
 
 #site-footer {height: 400px; width: 100%; background: #000000; padding: 100px 0px;
   h2 {color: #ffffff;}
+}
+
+.page-name {padding-top: 140px; padding-bottom: 60px; background: url("img/home_bg.jpg"); background-size: cover; background-position: top center; position: relative; z-index: 1;
+    // &:after {content: ""; position: absolute; width: 100%; height: 100%; left: 0px; bottom: 0px; background: url("img/wave_bg.svg"); background-size: 100%; background-repeat: no-repeat; background-position: bottom center; z-index: -1;}
+    .title {font-size: 83px; line-height: 83px; margin: 0px; }
+    p {margin: 0px;}
+}
+
+.identity-introduction {padding: 100px 0px 70px 0px;
+  img {border-radius: 7px;}
+  ul {margin: 0px; margin-top: 30px;}
+  li {@include font-bold; font-size: 20px; line-height: normal; border-left: 4px solid #F0F0F0; padding: 0px 30px 0px 15px; list-style: none; margin-bottom: 30px;}
+}
+
+#aadhaar { background: #fff2e1; padding: 80px 0px 100px 0px;
+  h2 {font-size: 64px; margin-bottom: 30px;}
+
+  .box {border: 2px solid #ffe7c8; border-radius: 7px; padding: 30px; margin-top: 30px; transition: all 0.3s ease;
+    &:hover {background: #ffe7c8; transition: all 0.3s ease;}
+    h3 {font-size: 30px; @include font-title; color: $orange; line-height: 30px; margin-bottom: 10px;}
+
+    p {color: #2d1800; font-size: 16px; margin: 0px;}
+  }
+
+  .more-info {margin-top: 30px;}
+}
+
+#digilocker {padding: 80px 0px 100px 0px;
+  h2 {font-size: 64px; margin-bottom: 30px;}
+
+}
+
+#esign {padding: 80px 0px 100px 0px;  background: #fff2e1;
+  h2 {font-size: 64px; margin-bottom: 30px;}
 }

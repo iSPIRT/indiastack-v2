@@ -39,6 +39,14 @@
       "oAP" : "\/build\/fonts\/ttcommons_medium.woff",
       "oF" : 0
     },
+    "\/identity.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/identity.html",
+      "oF" : 0
+    },
     "\/img\/home_bg.jpg" : {
       "ft" : 16384,
       "iS" : 600197,
@@ -75,6 +83,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/kerala.jpeg" : {
+      "ft" : 16384,
+      "iS" : 657383,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/kerala.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/next.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -104,6 +125,32 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/img\/stock\/family.jpeg" : {
+      "ft" : 16384,
+      "iS" : 497982,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/family.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/stock\/india.jpeg" : {
+      "ft" : 16384,
+      "iS" : 679557,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/india.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/img\/timeline_bg.jpg" : {
       "ft" : 16384,
