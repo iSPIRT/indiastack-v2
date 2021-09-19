@@ -7,6 +7,7 @@ define( [
 	"./var/rnothtmlwhite",
 	"./css/var/cssExpand",
 	"./css/var/isHiddenWithinTree",
+	"./css/var/swap",
 	"./css/adjustCSS",
 	"./data/var/dataPriv",
 	"./css/showHide",
@@ -19,7 +20,7 @@ define( [
 	"./css",
 	"./effects/Tween"
 ], function( jQuery, camelCase, document, isFunction, rcssNum, rnothtmlwhite, cssExpand,
-	isHiddenWithinTree, adjustCSS, dataPriv, showHide ) {
+	isHiddenWithinTree, swap, adjustCSS, dataPriv, showHide ) {
 
 "use strict";
 
@@ -230,7 +231,7 @@ function defaultPrefilter( elem, props, opts ) {
 
 			anim.done( function() {
 
-				/* eslint-enable no-loop-func */
+			/* eslint-enable no-loop-func */
 
 				// The final step of a "hide" animation is actually hiding the element
 				if ( !hidden ) {
@@ -350,7 +351,7 @@ function Animation( elem, properties, options ) {
 			tweens: [],
 			createTween: function( prop, end ) {
 				var tween = jQuery.Tween( elem, animation.opts, prop, end,
-					animation.opts.specialEasing[ prop ] || animation.opts.easing );
+						animation.opts.specialEasing[ prop ] || animation.opts.easing );
 				animation.tweens.push( tween );
 				return tween;
 			},
@@ -523,8 +524,7 @@ jQuery.fn.extend( {
 					anim.stop( true );
 				}
 			};
-
-		doAnimation.finish = doAnimation;
+			doAnimation.finish = doAnimation;
 
 		return empty || optall.queue === false ?
 			this.each( doAnimation ) :
@@ -542,7 +542,7 @@ jQuery.fn.extend( {
 			clearQueue = type;
 			type = undefined;
 		}
-		if ( clearQueue ) {
+		if ( clearQueue && type !== false ) {
 			this.queue( type || "fx", [] );
 		}
 
@@ -625,7 +625,7 @@ jQuery.fn.extend( {
 	}
 } );
 
-jQuery.each( [ "toggle", "show", "hide" ], function( _i, name ) {
+jQuery.each( [ "toggle", "show", "hide" ], function( i, name ) {
 	var cssFn = jQuery.fn[ name ];
 	jQuery.fn[ name ] = function( speed, easing, callback ) {
 		return speed == null || typeof speed === "boolean" ?

@@ -91,7 +91,7 @@
       "oAP" : "\/build\/img\/kerala.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -134,7 +134,7 @@
       "oAP" : "\/build\/img\/stock\/family.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -306,7 +306,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 653736248.25344706
+    "lastBuiltDate" : 653744542.29858994
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
