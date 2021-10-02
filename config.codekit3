@@ -60,6 +60,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/how-upi-works.jpg" : {
+      "ft" : 16384,
+      "iS" : 398805,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/how-upi-works.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/india-art.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -220,6 +233,14 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/payments.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/payments.html",
+      "oF" : 0
     },
     "\/scss\/_desktop.scss" : {
       "aP" : 0,

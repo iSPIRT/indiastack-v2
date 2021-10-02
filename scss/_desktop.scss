@@ -162,6 +162,20 @@ a {color: $orange;}
   .more-info {margin-top: 30px;}
 }
 
+.odd-section {background: #fff2e1; padding: 80px 0px 80px 0px;
+  img {border-radius: 7px;}
+}
+
+.even-section {background: #ffffff; padding: 80px 0px 80px 0px;
+  img {border-radius: 7px;}
+}
+
+#npci-stats {background: #ffe7c8; padding: 120px 0px 120px 0px;
+  h2 { margin: 0px;}
+
+
+}
+
 #digilocker {padding: 80px 0px 100px 0px;
   h2 {font-size: 64px; margin-bottom: 30px;}
 
@@ -169,4 +183,8 @@ a {color: $orange;}
 
 #esign {padding: 80px 0px 100px 0px;  background: #fff2e1;
   h2 {font-size: 64px; margin-bottom: 30px;}
+}
+
+.further-resources {border: 2px solid #ffe7c8; border-radius: 7px; padding: 30px; transition: all .3s ease;
+  ul {margin-bottom: 0px;}
 }
