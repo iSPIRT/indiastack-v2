@@ -37,7 +37,7 @@ $black: #000000;
 
 // ------- Typography
 
-body {@include font-normal; color: $black;}
+body {@include font-normal; color: $black; padding-top: 80px;}
 p, li {@include font-normal; color: $black; font-size: 18px;}
 
 p {margin-bottom: 20px;}
