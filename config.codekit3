@@ -23,6 +23,14 @@
       "oAP" : "\/build\/build",
       "oF" : 0
     },
+    "\/data.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/data.html",
+      "oF" : 0
+    },
     "\/fonts\/ttcommons_demiBold.woff" : {
       "cB" : 0,
       "ft" : 8192,
@@ -46,6 +54,19 @@
       "oA" : 0,
       "oAP" : "\/build\/identity.html",
       "oF" : 0
+    },
+    "\/img\/aa.jpg" : {
+      "ft" : 16384,
+      "iS" : 355890,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/aa.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/img\/home_bg.jpg" : {
       "ft" : 16384,
@@ -138,6 +159,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/img\/stock\/data.jpeg" : {
+      "ft" : 16384,
+      "iS" : 715819,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/data.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/img\/stock\/family.jpeg" : {
       "ft" : 16384,

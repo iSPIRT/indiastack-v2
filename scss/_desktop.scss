@@ -40,6 +40,8 @@ $black: #000000;
 body {@include font-normal; color: $black;}
 p, li {@include font-normal; color: $black; font-size: 18px;}
 
+p {margin-bottom: 20px;}
+
 h1, h2, h3, h4, h5, h6 {@include font-title; color: $black;}
 
 h1, h2.title {font-size: 50px; line-height: normal;}
@@ -48,7 +50,9 @@ h2 {font-size: 30px; line-height: normal;}
 h3 {@include font-title-medium; font-size: 38px; line-height: 58px;}
 strong {@include font-bold;}
 
-a {color: $orange;}
+a {color: $orange;
+  &:hover {color: #5d6400;}
+}
 
 .button {border-radius: 4px; background: #ffffff; border: 2px solid #F3F3F3; @include font-title-medium; font-size: 18px; color: $orange; padding: 9px 20px;
   &:hover {background: $orange; border-color: $orange;}
@@ -152,14 +156,16 @@ a {color: $orange;}
 #aadhaar { background: #fff2e1; padding: 80px 0px 100px 0px;
   h2 {font-size: 64px; margin-bottom: 30px;}
 
-  .box {border: 2px solid #ffe7c8; border-radius: 7px; padding: 30px; margin-top: 30px; transition: all 0.3s ease;
-    &:hover {background: #ffe7c8; transition: all 0.3s ease;}
-    h3 {font-size: 30px; @include font-title; color: $orange; line-height: 30px; margin-bottom: 10px;}
 
-    p {color: #2d1800; font-size: 16px; margin: 0px;}
-  }
 
   .more-info {margin-top: 30px;}
+}
+
+.box {border: 2px solid #ffe7c8; border-radius: 7px; padding: 30px; margin-top: 30px; transition: all 0.3s ease;
+  &:hover {background: #ffe7c8; transition: all 0.3s ease;}
+  h3 {font-size: 30px; @include font-title; color: $orange; line-height: 30px; margin-bottom: 10px;}
+
+  p {color: #2d1800; font-size: 16px; margin: 0px;}
 }
 
 .odd-section {background: #fff2e1; padding: 80px 0px 80px 0px;
@@ -187,4 +193,14 @@ a {color: $orange;}
 
 .further-resources {border: 2px solid #ffe7c8; border-radius: 7px; padding: 30px; transition: all .3s ease;
   ul {margin-bottom: 0px;}
+  a {color: #000000;
+    &:hover {color: $orange;}
+  }
+}
+
+.depa-core {
+  strong {font-size: 18px; margin-bottom: 20px; display: block;}
+  .box {height: 100%; background: #ffe7c8; margin-top: 0px;
+  }
+  .gap {height: 30px;}
 }
