@@ -31,6 +31,14 @@
       "oAP" : "\/build\/data.html",
       "oF" : 0
     },
+    "\/faq.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/faq.html",
+      "oF" : 0
+    },
     "\/fonts\/ttcommons_demiBold.woff" : {
       "cB" : 0,
       "ft" : 8192,
@@ -168,7 +176,7 @@
       "oAP" : "\/build\/img\/stock\/data.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -361,7 +369,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 653744542.29858994
+    "lastBuiltDate" : 654868530.55157304
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

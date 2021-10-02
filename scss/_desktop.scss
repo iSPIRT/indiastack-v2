@@ -204,3 +204,10 @@ a {color: $orange;
   }
   .gap {height: 30px;}
 }
+
+.faq-wrap {padding: 50px 0px;}
+
+.accordion-title {@include font-bold; font-size: 18px; color: #000000; border-color:#ffe7c8;
+  &:focus, &:hover {color: $orange; background-color: #fff2e1;}
+}
+.accordion-content {border-color:#ffe7c8;}
