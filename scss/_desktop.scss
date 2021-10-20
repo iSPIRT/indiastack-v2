@@ -137,8 +137,10 @@ a {color: $orange;
   }
 }
 
-#site-footer {height: 400px; width: 100%; background: #000000; padding: 100px 0px;
+#site-footer { width: 100%; background: #000000; padding: 100px 0px;
   h2 {color: #ffffff;}
+  .footer-logo {margin-bottom: 40px; display: block;}
+  p {color: #ffffff;}
 }
 
 .page-name {padding-top: 140px; padding-bottom: 60px; background: url("img/home_bg.jpg"); background-size: cover; background-position: top center; position: relative; z-index: 1;

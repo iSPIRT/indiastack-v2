@@ -125,6 +125,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/indiastack.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/img\/indiastack.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/kerala.jpeg" : {
       "ft" : 16384,
       "iS" : 657383,
@@ -295,9 +305,9 @@
       "oA" : 1,
       "oAP" : "\/build\/_desktop.css",
       "oF" : 0,
-      "oS" : 2,
+      "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/scss\/_mobile.scss" : {
       "aP" : 0,
@@ -310,9 +320,9 @@
       "oA" : 1,
       "oAP" : "\/build\/_mobile.css",
       "oF" : 0,
-      "oS" : 2,
+      "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/scss\/_settings.scss" : {
       "aP" : 0,
@@ -325,9 +335,9 @@
       "oA" : 1,
       "oAP" : "\/build\/_settings.css",
       "oF" : 0,
-      "oS" : 2,
+      "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/scss\/style.scss" : {
       "aP" : 0,
@@ -340,9 +350,9 @@
       "oA" : 0,
       "oAP" : "\/build\/style.css",
       "oF" : 0,
-      "oS" : 2,
+      "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/videos\/videobg.mp4" : {
       "cB" : 0,
@@ -1977,11 +1987,11 @@
       "autoOutputPathReplace1" : "sass",
       "autoOutputPathReplace2" : "css",
       "autoOutputPathStyle" : 2,
-      "compilerType" : 0,
+      "compilerType" : 1,
       "cssoStyle" : 0,
       "decimalPrecision" : 10,
       "emitCharset" : 1,
-      "outputStyle" : 2,
+      "outputStyle" : 0,
       "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 0,
       "shouldRunBless" : 0,
