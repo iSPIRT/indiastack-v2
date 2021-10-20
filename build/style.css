@@ -6056,6 +6056,11 @@ a {
     color: #F48F20;
     line-height: 30px;
     margin-bottom: 10px; }
+  .box .icon {
+    text-align: center;
+    margin-bottom: 20px; }
+    .box .icon img {
+      width: 100px; }
   .box p {
     color: #2d1800;
     font-size: 16px;
@@ -6132,3 +6137,7 @@ a {
 
 .accordion-content {
   border-color: #ffe7c8; }
+
+figure {
+  padding-right: 40px;
+  margin-bottom: 40px; }
