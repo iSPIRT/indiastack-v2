@@ -216,4 +216,6 @@ a {color: $orange;
 }
 .accordion-content {border-color:#ffe7c8;}
 
-figure {padding-right: 40px; margin-bottom: 40px;}
+figure {padding-right: 40px; margin-bottom: 40px;
+  &.right {padding-right: 0px; padding-left: 40px;}
+}

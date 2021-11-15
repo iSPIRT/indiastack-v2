@@ -308,6 +308,14 @@
       "oAP" : "\/build\/node_modules",
       "oF" : 0
     },
+    "\/open-networks.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/open-networks.html",
+      "oF" : 0
+    },
     "\/package.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -413,7 +421,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 654869138.14860404
+    "lastBuiltDate" : 656431718.52211404
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
