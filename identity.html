@@ -43,7 +43,7 @@
           <div class="large-12 cell">
             <div class="wrap">
               <h1 class="title">Identity</h1>
-              <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <!-- <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
             </div>
           </div>
         </div>
@@ -55,12 +55,12 @@
         <div class="grid-x grid-padding-x">
           <div class="medium-6 cell">
             <p class="highlight">
-              <p>The bedrock of India Stack is a set of digital identity products centered around Aadhaar, India’s national identity program. More than 1.296bn (94%) Indians possess an Aadhaar number, which allows them to perform a number of actions including:</p>
+              <p>The bedrock of India Stack is a set of digital identity products centered around Aadhaar, India’s national identity program. More than 1.31bn (95%) Indians possess an Aadhaar number, which allows them to perform a number of actions including:</p>
             </p>
             <ul>
-              <li>Remotely authenticating any one, or indeed all, of these attributes via 2-factor or biometric authentication: name, age, address, mobile number, email address, gender <a href="#">learn more</a> </li>
-              <li>Signing documents or messages using a government-backed digital signature service <a href="#">learn more</a> </li>
-              <li>Receiving digitally signed and universally accepted copies of lifetime records such as driver’s licenses, educational diplomas, insurance policies, and more <a href="#">learn more</a> </li>
+              <li>Remotely authenticating any one, or indeed all, of these attributes via 2-factor or biometric authentication: name, age, address, mobile number, email address, gender. </li>
+              <li>Receiving digitally signed and universally accepted copies of lifetime records such as driver’s licenses, educational diplomas, insurance policies, and more. </li>
+              <li>Signing documents or messages using a government-backed digital signature service. </li>
 
             </ul>
           </div>
@@ -105,7 +105,7 @@
         <a href="https://uidai.gov.in/ecosystem/authentication-devices-documents/qr-code-reader.html" target="_blank">
           <div class="box">
             <h3>QR code scan</h3>
-            <p class="description">Each Aadhaar card comes with an accompanying QR code that can be scanned, allowing the scanner to verify the user’s identity from the UIDAI database. Both physical and digital Aadhaar cards (e-Sadhaar) can be scanned in this manner, from UIDAI-built iOS apps, Android apps, or Windows apps.</p>
+            <p class="description">Each Aadhaar card comes with an accompanying QR code that can be scanned, allowing the scanner to verify the user’s identity from the UIDAI database. Both physical and digital Aadhaar cards (e-Aadhaar) can be scanned in this manner, from UIDAI-built iOS apps, Android apps, or Windows apps.</p>
           </div>
         </a>
       </div>
@@ -129,21 +129,21 @@
       </div>
 
       <div class="medium-12 more-info">
-        <p>The utilities offered by Aadhaar can be used to build all kinds of identity workflows. For example, a developer could build a social media platform that only allows women users to sign up. In another case, an app could use e-auth to verify that the address field entered by a user is actually valid. </p>
+        <p>The utilities offered by Aadhaar can be used to build all kinds of identity workflows. For example, a developer could build a social media platform that only allows women users to sign up. In another case, an app could use e-auth to verify that a user's claimed address, while leaving all other fields anonymous. </p>
 
-        <p>The possibilities are manifold, and developers are encouraged to come up with novel ways to use this public digital infrastructure. Having said that, readers should be aware that e-auth and e-KYC services are only available to banks, telecom companies, and government bodies.</p>
+        <p>The possibilities are manifold, and developers are encouraged to come up with novel ways to use this public digital infrastructure. Having said that, readers should be aware that e-auth and e-KYC services are only available to banks, licensed NBFCs, telecom companies, and government bodies.</p>
 
         <p>Developers belonging to other organizations must use QR code scans, e-Aadhaar, or offline XML in order to prove a customer’s identity using Aadhaar.</p>
 
         <p>Here are some relevant resources about Aadhaar authentication services:</p>
         <ul>
-          <li>The API specification for e-KYC</li>
-          <li>Karza sandbox</li>
-          <li>Digio sandbox</li>
+          <li><a href="https://uidai.gov.in/images/aadhaar_ekyc_api_2_0.pdf" target="_blank">The API specification for e-KYC</a></li>
+          <li><a href="https://www.uidai.gov.in/914-developer-section.html" target="_blank">The UIDAI Developer Section</a></li>
+          <!-- <li>Digio sandbox</li> -->
         </ul>
 
-        <h4>Statistics detailing the number of e-auth requests in real time</h4>
-
+        <h4>Statistics detailing the number of e-auth requests in real time (use stats from the link in the commented out code below this) </h4>
+        <!-- We can get the following stats here: Aadhaar generated, Aadhaar updated, Authentications done, eKYC done: https://uidai.gov.in/aadhaar_dashboard/ -->
       </div>
 
     </div>
@@ -157,9 +157,10 @@
         <div class="large-12 cell">
           <h2>Digilocker</h2>
           <p>DigiLocker is a public utility provided to Aadhaar holders by the Government of India. The service allows an Aadhaar holder to sign in using a one-time password sent to the mobile number used to enroll on Aadhaar. Once inside, residents of India will find a number of digitally signed, legally valid electronic documents waiting for them.</p>
-          <p>Currently, there are more than 3 billion documents issued directly into Digilocker by authorities. These documents range from driver’s licenses, to educational diplomas, to insurance policies. In total, more than 140 institutions have issued Documents into Diiglocker, while many more are integrated with DigiLocker in order to request and verify user documents with user consent. </p>
+          <p>Currently, there are more than 4.6 billion documents issued directly into Digilocker by authorities. These documents range from driver’s licenses, to educational diplomas, to insurance policies. In total, there are currently 1460 institutions signed up as document issuers on Digilocker, 233 are integrated with DigiLocker as requesters who can verify user documents with consent. </p>
 
-          <p>DigiLocker is implemented as a government-operated <a href="https://play.google.com/store/apps/details?id=com.digilocker.android&hl=en_IN&gl=US" target="_blank">mobile app</a> and  <a href="https://digilocker.gov.in/" target="_blank">web app</a>. Developers and businesses may choose to apply  </p>
+          <p>DigiLocker is implemented as a government-operated <a href="https://play.google.com/store/apps/details?id=com.digilocker.android&hl=en_IN&gl=US" target="_blank">mobile app</a> and  <a href="https://digilocker.gov.in/" target="_blank">web app</a>. Statistics about the service can be found <a href="https://api.digitallocker.gov.in/public/dashboard#!" target="_blank">here </a> and the developer resource center can be found <a href="https://partners.digilocker.gov.in/requester.php" target="_blank">here</a>. </p>
+          
         </div>
       </div>
     </div>
@@ -173,12 +174,13 @@
         <div class="large-12 cell">
           <h2>eSign</h2>
           <p>eSign is a digital signature product built atop Aadhaar. It allows any Aadhaar holder to produce legally valid digital signatures on any document, at any time, using any device. Consent for this signature is obtained through a one-time password sent to the signer’s Aadhaar-linked mobile number.</p>
-          <p>In order to gain access to the certified  eSign in their workflows, application developers must enroll as eSign Application Service Providers (ASPs).</p>
           <p>Presently, eSign is used to streamline workflows for multiple fields including financial services, legal services, healthcare, and more.</p>
-          <ul>
+          <p>In order to gain access to certified  eSign in their workflows, application developers must enroll as eSign <a href="https://cca.gov.in/sites/files/pdf/esign/CCA-ASP.pdf" target="_blank">Application Service Providers (ASPs).</a></p>
+          
+          <!-- <ul>
             <li>eSign statistics </li>
             <li>links to ESPs</li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>

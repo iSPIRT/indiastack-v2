@@ -7,7 +7,7 @@
       "uuidString" : "40CF4EBB-7321-47F2-A7C2-BC0E32D0804D"
     }
   ],
-  "creatorBuild" : "34214",
+  "creatorBuild" : "34264",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -316,6 +316,14 @@
       "oAP" : "\/build\/open-networks.html",
       "oF" : 0
     },
+    "\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/build\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/package.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -417,11 +425,11 @@
   },
   "projectAttributes" : {
     "creationDate" : 653295300.60022902,
-    "displayValue" : "indiastack",
+    "displayValue" : "indiastack-v2",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 656431718.52211404
+    "lastBuiltDate" : 659978179.34418797
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1568,6 +1576,9 @@
       },
       "no-unused-labels" : {
         "active" : 1
+      },
+      "no-unused-private-class-members" : {
+        "active" : 0
       },
       "no-unused-vars" : {
         "active" : 1,
