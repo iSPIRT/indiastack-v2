@@ -305,7 +305,7 @@
       "oAP" : "\/build\/img\/stock\/basic-phone.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -331,7 +331,7 @@
       "oAP" : "\/build\/img\/stock\/digi-phone.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -344,7 +344,7 @@
       "oAP" : "\/build\/img\/stock\/digi.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -409,7 +409,7 @@
       "oAP" : "\/build\/img\/stock\/on-phone.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -422,7 +422,7 @@
       "oAP" : "\/build\/img\/stock\/payment.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -435,7 +435,7 @@
       "oAP" : "\/build\/img\/stock\/phone-laptop.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -622,7 +622,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 660666792.63747299
+    "lastBuiltDate" : 660675431.249856
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
