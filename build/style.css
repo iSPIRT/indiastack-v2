@@ -5993,7 +5993,7 @@ a {
   #site-footer h2 {
     color: #ffffff; }
   #site-footer .footer-logo {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     display: block; }
   #site-footer p {
     color: #ffffff; }
@@ -6144,3 +6144,24 @@ figure {
   figure.right {
     padding-right: 0px;
     padding-left: 40px; }
+
+.follow_on_twitter {
+  background: #1DA1F2;
+  border-color: #1DA1F2;
+  color: #ffffff; }
+  .follow_on_twitter img {
+    width: 20px;
+    position: relative;
+    top: -1px;
+    margin-right: 5px; }
+
+.footer-menu a {
+  color: #a7a8ab;
+  margin-top: 16px; }
+  .footer-menu a img {
+    width: 20px;
+    position: relative;
+    top: -1px;
+    margin-right: 5px; }
+  .footer-menu a:hover {
+    color: #ffffff; }

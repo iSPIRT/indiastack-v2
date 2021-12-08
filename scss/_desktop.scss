@@ -139,7 +139,7 @@ a {color: $orange;
 
 #site-footer { width: 100%; background: #000000; padding: 100px 0px;
   h2 {color: #ffffff;}
-  .footer-logo {margin-bottom: 40px; display: block;}
+  .footer-logo {margin-bottom: 0px; display: block;}
   p {color: #ffffff;}
 }
 
@@ -218,4 +218,15 @@ a {color: $orange;
 
 figure {padding-right: 40px; margin-bottom: 40px;
   &.right {padding-right: 0px; padding-left: 40px;}
+}
+
+.follow_on_twitter {background: #1DA1F2; border-color: #1DA1F2; color: #ffffff;
+  img {width: 20px; position: relative; top: -1px; margin-right: 5px;}
+}
+
+.footer-menu {
+  a {color: #a7a8ab; margin-top: 16px;
+    img {width: 20px; position: relative; top: -1px; margin-right: 5px;}
+    &:hover {color: #ffffff;}
+  }
 }
