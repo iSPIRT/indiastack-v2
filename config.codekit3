@@ -295,7 +295,7 @@
       "oAP" : "\/build\/img\/stock\/india-mobile.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -495,7 +495,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 659978179.34418797
+    "lastBuiltDate" : 660666792.63747299
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
