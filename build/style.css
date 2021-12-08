@@ -6032,10 +6032,10 @@ header a, footer a {
   .identity-introduction:after {
     content: "";
     position: absolute;
-    left: calc(50% + 15px);
+    left: 50%;
     top: 0;
     height: 100%;
-    width: calc(50% - 15px);
+    width: 50%;
     background: url("img/stock/family.jpg");
     z-index: -1;
     background-size: cover;
@@ -6061,14 +6061,50 @@ header a, footer a {
   .data-introduction:after {
     content: "";
     position: absolute;
-    left: calc(50% + 15px);
+    left: 50%;
     top: 0;
     height: 100%;
-    width: calc(50% - 15px);
+    width: 50%;
     background: url("img/stock/family.jpg");
     z-index: -1;
     background-size: cover;
     background-position: center; }
+  .data-introduction .cell {
+    padding-right: 30px; }
+
+.payments-introduction {
+  padding: 100px 0px 70px 0px;
+  position: relative; }
+  .payments-introduction:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: url("img/stock/family.jpg");
+    z-index: -1;
+    background-size: cover;
+    background-position: center; }
+  .payments-introduction .cell {
+    padding-right: 30px; }
+
+.open-introduction {
+  padding: 100px 0px 70px 0px;
+  position: relative; }
+  .open-introduction:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: url("img/stock/family.jpg");
+    z-index: -1;
+    background-size: cover;
+    background-position: center; }
+  .open-introduction .cell {
+    padding-right: 30px; }
 
 #aadhaar {
   background: #fff2e1;
