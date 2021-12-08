@@ -6065,7 +6065,7 @@ header a, footer a {
     top: 0;
     height: 100%;
     width: 50%;
-    background: url("img/stock/family.jpg");
+    background: url("img/stock/phone-laptop.jpeg");
     z-index: -1;
     background-size: cover;
     background-position: center; }
@@ -6082,7 +6082,7 @@ header a, footer a {
     top: 0;
     height: 100%;
     width: 50%;
-    background: url("img/stock/family.jpg");
+    background: url("img/stock/payment.jpg");
     z-index: -1;
     background-size: cover;
     background-position: center; }
@@ -6195,7 +6195,7 @@ header a, footer a {
     top: 0;
     height: 100%;
     width: calc(50% - 15px);
-    background: url("img/stock/india-mobile.jpg");
+    background: url("img/stock/digi.jpg");
     z-index: -1;
     background-size: cover;
     background-position: center; }

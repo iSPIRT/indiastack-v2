@@ -166,12 +166,12 @@ header a, footer a {border: none;}
 }
 
 .data-introduction {padding: 100px 0px 70px 0px; position: relative;
-  &:after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width: 50%; background: url('img/stock/family.jpg'); z-index: -1; background-size: cover; background-position: center;}
+  &:after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width: 50%; background: url('img/stock/phone-laptop.jpeg'); z-index: -1; background-size: cover; background-position: center;}
   .cell {padding-right: 30px;}
 }
 
 .payments-introduction {padding: 100px 0px 70px 0px; position: relative;
-  &:after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width:50%; background: url('img/stock/family.jpg'); z-index: -1; background-size: cover; background-position: center;}
+  &:after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width:50%; background: url('img/stock/payment.jpg'); z-index: -1; background-size: cover; background-position: center;}
   .cell {padding-right: 30px;}
 }
 
@@ -220,7 +220,7 @@ header a, footer a {border: none;}
 }
 
 #digilocker {padding: 80px 0px 80px 0px; position: relative;
-  &:after { content: ""; position: absolute; left: calc(50% + 15px); top: 0; height: 100%; width: calc(50% - 15px); background: url('img/stock/india-mobile.jpg'); z-index: -1; background-size: cover; background-position: center;}
+  &:after { content: ""; position: absolute; left: calc(50% + 15px); top: 0; height: 100%; width: calc(50% - 15px); background: url('img/stock/digi.jpg'); z-index: -1; background-size: cover; background-position: center;}
 
   h2 {font-size: 64px; margin-bottom: 30px;
     img {width: 100px; position: relative; top: -15px; margin-right: 10px;}

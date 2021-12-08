@@ -76,6 +76,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/aa.png" : {
+      "ft" : 32768,
+      "iS" : 101578,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/aa.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/home_bg.jpg" : {
       "ft" : 16384,
       "iS" : 600197,
@@ -261,6 +274,32 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/stock\/artist.jpg" : {
+      "ft" : 16384,
+      "iS" : 478682,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/artist.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/stock\/basic-phone.jpeg" : {
+      "ft" : 16384,
+      "iS" : 196788,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/basic-phone.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/stock\/data.jpeg" : {
       "ft" : 16384,
       "iS" : 715819,
@@ -270,6 +309,32 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/stock\/digi-phone.jpeg" : {
+      "ft" : 16384,
+      "iS" : 142332,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/digi-phone.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/stock\/digi.jpeg" : {
+      "ft" : 16384,
+      "iS" : 187956,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/digi.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -300,6 +365,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/stock\/india-payment.jpeg" : {
+      "ft" : 16384,
+      "iS" : 8281384,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/india-payment.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/stock\/india.jpeg" : {
       "ft" : 16384,
       "iS" : 679557,
@@ -309,6 +387,45 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/stock\/on-phone.jpeg" : {
+      "ft" : 16384,
+      "iS" : 292379,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/on-phone.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/stock\/payment.jpeg" : {
+      "ft" : 16384,
+      "iS" : 422385,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/payment.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/stock\/phone-laptop.jpeg" : {
+      "ft" : 16384,
+      "iS" : 312492,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/phone-laptop.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
