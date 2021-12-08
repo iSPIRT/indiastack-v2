@@ -189,11 +189,15 @@ header a, footer a {border: none;}
     &:hover {transition: all 0.3s ease; border-color: #363636;}
   }
 
-  .button {background: transparent; margin-right: 10px; border-color: #ffdeba;
+  .button {background: transparent; margin-right: 10px; border-color: #ffdeba; margin-bottom: 0px;
     &:hover {background: $orange; border-color: $orange;}
   }
-  .more-info {margin-top: 30px;}
-  .aadhaar-stats {margin-top: 30px;}
+  .more-info {margin-top: 60px;}
+  .aadhaar-stats.statistics {margin-top: 60px; background: #ffffff; padding: 30px; border-radius: 10px; padding-bottom: 50px;
+    h4 {margin-bottom: 30px;}
+    p.description {height: auto; color: #8f6a3f;}
+    h3 {color: #412c13;}
+  }
 }
 
 .box {border: 2px solid #ffe7c8; background: #ffe7c8; border-radius: 7px; padding: 30px; margin-top: 30px; transition: all 0.3s ease;
@@ -231,9 +235,10 @@ header a, footer a {border: none;}
 
 #esign {padding: 80px 0px 80px 0px;  background: #fff2e1; position: relative;
 
-  &:after { content: ""; position: absolute; right: calc(50% + 15px); top: 0; height: 100%; width: calc(50% - 15px); background: url('img/stock/india-mobile.jpg'); z-index: -1; background-size: cover; background-position: center;}
-
   h2 {font-size: 64px; margin-bottom: 30px;}
+  .center-wrap {height: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;
+    img {width: 300px; opacity: 0.2;}
+  }
 }
 
 .further-resources {border: 2px solid #ffe7c8; border-radius: 7px; padding: 30px; transition: all .3s ease;
