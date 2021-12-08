@@ -35,6 +35,13 @@ $black: #000000;
 @mixin font-title {font-family: 'TT Commons DemiBold'; font-style: normal; font-weight: normal;}
 @mixin font-title-medium {font-family: 'TT Commons Medium'; font-style: normal; font-weight: normal;}
 
+// Grid
+
+.grid-padding-x > .cell {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 // ------- Typography
 
 body {@include font-normal; color: $black;}
@@ -50,11 +57,13 @@ h2 {font-size: 30px; line-height: normal;}
 h3 {@include font-title-medium; font-size: 38px; line-height: 58px;}
 strong {@include font-bold;}
 
-a {color: $orange;
-  &:hover {color: #5d6400;}
+a {@include font-bold; border-bottom: 1px solid rgba(0,0,0,0.2); color: $black; transition: all 0.3s ease;
+  &:hover {transition: all 0.3s ease; border-color: $orange; color: $orange;}
 }
 
-.button {border-radius: 4px; background: #ffffff; border: 2px solid #F3F3F3; @include font-title-medium; font-size: 18px; color: $orange; padding: 9px 20px;
+header a, footer a {border: none;}
+
+.button {border-radius: 4px; background: #ffffff; border: 2px solid #fdebd7; @include font-title-medium; font-size: 18px; color: $orange; padding: 10px 22px;
   &:hover {background: $orange; border-color: $orange;}
 }
 
@@ -149,22 +158,35 @@ a {color: $orange;
     p {margin: 0px;}
 }
 
-.identity-introduction {padding: 100px 0px 70px 0px;
+.identity-introduction {padding: 100px 0px 70px 0px; position: relative;
+  &:after { content: ""; position: absolute; left: calc(50% + 15px); top: 0; height: 100%; width: calc(50% - 15px); background: url('img/stock/family.jpg'); z-index: -1; background-size: cover; background-position: center;}
   img {border-radius: 7px;}
   ul {margin: 0px; margin-top: 30px;}
   li {@include font-bold; font-size: 20px; line-height: normal; border-left: 4px solid #F0F0F0; padding: 0px 30px 0px 15px; list-style: none; margin-bottom: 30px;}
 }
 
-#aadhaar { background: #fff2e1; padding: 80px 0px 100px 0px;
-  h2 {font-size: 64px; margin-bottom: 30px;}
-
-
-
-  .more-info {margin-top: 30px;}
+.data-introduction {padding: 100px 0px 70px 0px; position: relative;
+  &:after { content: ""; position: absolute; left: calc(50% + 15px); top: 0; height: 100%; width: calc(50% - 15px); background: url('img/stock/family.jpg'); z-index: -1; background-size: cover; background-position: center;}
 }
 
-.box {border: 2px solid #ffe7c8; border-radius: 7px; padding: 30px; margin-top: 30px; transition: all 0.3s ease;
-  &:hover {background: #ffe7c8; transition: all 0.3s ease;}
+#aadhaar { background: #fff2e1; padding: 80px 0px 100px 0px;
+  h2 {font-size: 64px; margin-bottom: 30px;
+    img {width: 150px; position: relative; top: -10px; margin-right: 10px;}
+  }
+
+  .know-more {@include font-bold; margin-top: 10px; border-bottom: 1px solid #edc795; display: inline-block; transition: all 0.3s ease;
+    &:hover {transition: all 0.3s ease; border-color: #363636;}
+  }
+
+  .button {background: transparent; margin-right: 10px; border-color: #ffdeba;
+    &:hover {background: $orange; border-color: $orange;}
+  }
+  .more-info {margin-top: 30px;}
+  .aadhaar-stats {margin-top: 30px;}
+}
+
+.box {border: 2px solid #ffe7c8; background: #ffe7c8; border-radius: 7px; padding: 30px; margin-top: 30px; transition: all 0.3s ease;
+  &:hover {background: transparent; transition: all 0.3s ease;}
   h3 {font-size: 30px; @include font-title; color: $orange; line-height: 30px; margin-bottom: 10px;}
   .icon {text-align: center; margin-bottom: 20px;
     img {width: 100px;}
@@ -186,12 +208,20 @@ a {color: $orange;
 
 }
 
-#digilocker {padding: 80px 0px 100px 0px;
-  h2 {font-size: 64px; margin-bottom: 30px;}
+#digilocker {padding: 80px 0px 80px 0px; position: relative;
+  &:after { content: ""; position: absolute; left: calc(50% + 15px); top: 0; height: 100%; width: calc(50% - 15px); background: url('img/stock/india-mobile.jpg'); z-index: -1; background-size: cover; background-position: center;}
 
+  h2 {font-size: 64px; margin-bottom: 30px;
+    img {width: 100px; position: relative; top: -15px; margin-right: 10px;}
+  }
+
+.button {margin-right: 10px; margin-bottom: 0px;}
 }
 
-#esign {padding: 80px 0px 100px 0px;  background: #fff2e1;
+#esign {padding: 80px 0px 80px 0px;  background: #fff2e1; position: relative;
+
+  &:after { content: ""; position: absolute; right: calc(50% + 15px); top: 0; height: 100%; width: calc(50% - 15px); background: url('img/stock/india-mobile.jpg'); z-index: -1; background-size: cover; background-position: center;}
+
   h2 {font-size: 64px; margin-bottom: 30px;}
 }
 

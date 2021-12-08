@@ -67,7 +67,6 @@
           <div class="medium-1 cell"></div>
 
           <div class="medium-5 cell">
-            <img src="img/stock/family.jpg" alt="">
           </div>
 
         </div>
@@ -79,7 +78,7 @@
   <div class="grid-container">
     <div class="grid-x grid-padding-x">
       <div class="large-12 cell">
-        <h2>Aadhaar Authentication</h2>
+        <h2><img src="img/logo/aadhaar.svg" alt="Aadhaar"> Aadhaar Authentication</h2>
         <p>The entire point of the Aadhaar program is to seed the population with secure, versatile digital IDs that can be used to quickly authenticate a user’s identity. There are currently a variety of ways in which a petitioner can prove a user’s identity using Aadhaar:</p>
       </div>
 
@@ -88,6 +87,7 @@
           <div class="box">
             <h3>e-auth</h3>
             <p class="description"> A petitioner sends a user’s Aadhaar number and name/address/birthday/gender/email/phone number to the UIDAI server, which responds with a yes/no answer indicating whether the given fields were correct</p>
+            <p class="know-more">Know More</p>
           </div>
         </a>
       </div>
@@ -97,6 +97,7 @@
           <div class="box">
             <h3>e-KYC</h3>
             <p class="description">A petitioner collects consent (via biometric of two-factor OTP authentication) from a user and submits their Aadhaar number to the UIDAI system. The system then returns the user’s entire KYC data including all six demographic fields and the user’s photograph.</p>
+            <p class="know-more">Know More</p>
           </div>
         </a>
       </div>
@@ -106,6 +107,7 @@
           <div class="box">
             <h3>QR code scan</h3>
             <p class="description">Each Aadhaar card comes with an accompanying QR code that can be scanned, allowing the scanner to verify the user’s identity from the UIDAI database. Both physical and digital Aadhaar cards (e-Aadhaar) can be scanned in this manner, from UIDAI-built iOS apps, Android apps, or Windows apps.</p>
+            <p class="know-more">Know More</p>
           </div>
         </a>
       </div>
@@ -115,6 +117,7 @@
           <div class="box">
             <h3>Offline XML</h3>
             <p class="description">In this mode of authentication, the user visits the UIDAI website, logs in using his Aadhaar-registered mobile number or email address, and then generates an XML object containing a digital signature from UIDAI. This XML can then be shared with any party, which can easily verify the digital signature and prove the user’s identity. </p>
+            <p class="know-more">Know More</p>
           </div>
         </a>
       </div>
@@ -124,11 +127,12 @@
           <div class="box">
             <h3>e-Aadhaar</h3>
             <p class="description">Users may obtain and share digitally signed PDF copies of their Aadhaar cards downloaded from the UIDAI database. According to Indian law, this PDF document is equally valid as the physical Aadhaar card which gets issued to users.</p>
+            <p class="know-more">Know More</p>
           </div>
         </a>
       </div>
 
-      <div class="medium-12 more-info">
+      <div class="medium-12 cell more-info">
         <p>The utilities offered by Aadhaar can be used to build all kinds of identity workflows. For example, a developer could build a social media platform that only allows women users to sign up. In another case, an app could use e-auth to verify that a user's claimed address, while leaving all other fields anonymous. </p>
 
         <p>The possibilities are manifold, and developers are encouraged to come up with novel ways to use this public digital infrastructure. Having said that, readers should be aware that e-auth and e-KYC services are only available to banks, licensed NBFCs, telecom companies, and government bodies.</p>
@@ -136,14 +140,16 @@
         <p>Developers belonging to other organizations must use QR code scans, e-Aadhaar, or offline XML in order to prove a customer’s identity using Aadhaar.</p>
 
         <p>Here are some relevant resources about Aadhaar authentication services:</p>
-        <ul>
-          <li><a href="https://uidai.gov.in/images/aadhaar_ekyc_api_2_0.pdf" target="_blank">The API specification for e-KYC</a></li>
-          <li><a href="https://www.uidai.gov.in/914-developer-section.html" target="_blank">The UIDAI Developer Section</a></li>
-          <!-- <li>Digio sandbox</li> -->
-        </ul>
 
-        <h4>Statistics detailing the number of e-auth requests in real time (use stats from the link in the commented out code below this) </h4>
-        <!-- We can get the following stats here: Aadhaar generated, Aadhaar updated, Authentications done, eKYC done: https://uidai.gov.in/aadhaar_dashboard/ -->
+        <a href="https://uidai.gov.in/images/aadhaar_ekyc_api_2_0.pdf" target="_blank" class="button">The API specification for e-KYC</a>
+        <a href="https://www.uidai.gov.in/914-developer-section.html" target="_blank" class="button">The UIDAI Developer Section</a>
+
+        <div class="aadhaar-stats">
+
+          <h4>Statistics detailing the number of e-auth requests in real time (use stats from the link in the commented out code below this) </h4>
+          <!-- We can get the following stats here: Aadhaar generated, Aadhaar updated, Authentications done, eKYC done: https://uidai.gov.in/aadhaar_dashboard/ -->
+
+        </div>
       </div>
 
     </div>
@@ -153,15 +159,18 @@
 <div id="digilocker">
   <div class="grid-container">
     <div class="grid-x grid-padding-x">
-      <div class="large-12 cell">
-        <div class="large-12 cell">
-          <h2>Digilocker</h2>
-          <p>DigiLocker is a public utility provided to Aadhaar holders by the Government of India. The service allows an Aadhaar holder to sign in using a one-time password sent to the mobile number used to enroll on Aadhaar. Once inside, residents of India will find a number of digitally signed, legally valid electronic documents waiting for them.</p>
-          <p>Currently, there are more than 4.6 billion documents issued directly into Digilocker by authorities. These documents range from driver’s licenses, to educational diplomas, to insurance policies. In total, there are currently 1460 institutions signed up as document issuers on Digilocker, 233 are integrated with DigiLocker as requesters who can verify user documents with consent. </p>
+      <div class="medium-6 cell">
+        <h2><img src="img/logo/digilocker.png" alt="Digilocker"> Digilocker</h2>
+        <p>DigiLocker is a public utility provided to Aadhaar holders by the Government of India. The service allows an Aadhaar holder to sign in using a one-time password sent to the mobile number used to enroll on Aadhaar. Once inside, residents of India will find a number of digitally signed, legally valid electronic documents waiting for them.</p>
+        <p>Currently, there are more than 4.6 billion documents issued directly into Digilocker by authorities. These documents range from driver’s licenses, to educational diplomas, to insurance policies. In total, there are currently 1460 institutions signed up as document issuers on Digilocker, 233 are integrated with DigiLocker as requesters who can verify user documents with consent. </p>
 
-          <p>DigiLocker is implemented as a government-operated <a href="https://play.google.com/store/apps/details?id=com.digilocker.android&hl=en_IN&gl=US" target="_blank">mobile app</a> and  <a href="https://digilocker.gov.in/" target="_blank">web app</a>. Statistics about the service can be found <a href="https://api.digitallocker.gov.in/public/dashboard#!" target="_blank">here </a> and the developer resource center can be found <a href="https://partners.digilocker.gov.in/requester.php" target="_blank">here</a>. </p>
+        <p>DigiLocker is implemented as a government-operated <a href="https://play.google.com/store/apps/details?id=com.digilocker.android&hl=en_IN&gl=US" target="_blank">mobile app</a> and  <a href="https://digilocker.gov.in/" target="_blank">web app</a>.</p>
 
-        </div>
+        <a href="https://api.digitallocker.gov.in/public/dashboard#!" target="_blank" class="button">Digilocker Statistics</a>
+        <a href="https://partners.digilocker.gov.in/requester.php" target="_blank" class="button">Developer Resources</a>
+
+      </div>
+      <div class="medium-6 cell">
       </div>
     </div>
   </div>
@@ -170,18 +179,20 @@
 <div id="esign">
   <div class="grid-container">
     <div class="grid-x grid-padding-x">
-      <div class="large-12 cell">
-        <div class="large-12 cell">
-          <h2>eSign</h2>
-          <p>eSign is a digital signature product built atop Aadhaar. It allows any Aadhaar holder to produce legally valid digital signatures on any document, at any time, using any device. Consent for this signature is obtained through a one-time password sent to the signer’s Aadhaar-linked mobile number.</p>
-          <p>Presently, eSign is used to streamline workflows for multiple fields including financial services, legal services, healthcare, and more.</p>
-          <p>In order to gain access to certified  eSign in their workflows, application developers must enroll as eSign <a href="https://cca.gov.in/sites/files/pdf/esign/CCA-ASP.pdf" target="_blank">Application Service Providers (ASPs).</a></p>
 
-          <!-- <ul>
-            <li>eSign statistics </li>
-            <li>links to ESPs</li>
-          </ul> -->
-        </div>
+      <div class="medium-6 cell">
+      </div>
+
+      <div class="medium-6 cell">
+        <h2>eSign</h2>
+        <p>eSign is a digital signature product built atop Aadhaar. It allows any Aadhaar holder to produce legally valid digital signatures on any document, at any time, using any device. Consent for this signature is obtained through a one-time password sent to the signer’s Aadhaar-linked mobile number.</p>
+        <p>Presently, eSign is used to streamline workflows for multiple fields including financial services, legal services, healthcare, and more.</p>
+        <p>In order to gain access to certified  eSign in their workflows, application developers must enroll as eSign <a href="https://cca.gov.in/sites/files/pdf/esign/CCA-ASP.pdf" target="_blank">Application Service Providers (ASPs).</a></p>
+
+        <!-- <ul>
+          <li>eSign statistics </li>
+          <li>links to ESPs</li>
+        </ul> -->
       </div>
     </div>
   </div>

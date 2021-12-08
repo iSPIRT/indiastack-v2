@@ -5693,6 +5693,10 @@ html.is-reveal-open {
   font-weight: normal;
   src: local("TT Commons Medium"), url("fonts/ttcommons_medium.woff") format("woff"); }
 
+.grid-padding-x > .cell {
+  padding-right: 15px;
+  padding-left: 15px; }
+
 body {
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
@@ -5733,20 +5737,29 @@ strong {
   font-weight: 600; }
 
 a {
-  color: #F48F20; }
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #000000;
+  transition: all 0.3s ease; }
   a:hover {
-    color: #5d6400; }
+    transition: all 0.3s ease;
+    border-color: #F48F20;
+    color: #F48F20; }
+
+header a, footer a {
+  border: none; }
 
 .button {
   border-radius: 4px;
   background: #ffffff;
-  border: 2px solid #F3F3F3;
+  border: 2px solid #fdebd7;
   font-family: 'TT Commons Medium';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   color: #F48F20;
-  padding: 9px 20px; }
+  padding: 10px 22px; }
   .button:hover {
     background: #F48F20;
     border-color: #F48F20; }
@@ -6014,7 +6027,19 @@ a {
     margin: 0px; }
 
 .identity-introduction {
-  padding: 100px 0px 70px 0px; }
+  padding: 100px 0px 70px 0px;
+  position: relative; }
+  .identity-introduction:after {
+    content: "";
+    position: absolute;
+    left: calc(50% + 15px);
+    top: 0;
+    height: 100%;
+    width: calc(50% - 15px);
+    background: url("img/stock/family.jpg");
+    z-index: -1;
+    background-size: cover;
+    background-position: center; }
   .identity-introduction img {
     border-radius: 7px; }
   .identity-introduction ul {
@@ -6030,23 +6055,63 @@ a {
     list-style: none;
     margin-bottom: 30px; }
 
+.data-introduction {
+  padding: 100px 0px 70px 0px;
+  position: relative; }
+  .data-introduction:after {
+    content: "";
+    position: absolute;
+    left: calc(50% + 15px);
+    top: 0;
+    height: 100%;
+    width: calc(50% - 15px);
+    background: url("img/stock/family.jpg");
+    z-index: -1;
+    background-size: cover;
+    background-position: center; }
+
 #aadhaar {
   background: #fff2e1;
   padding: 80px 0px 100px 0px; }
   #aadhaar h2 {
     font-size: 64px;
     margin-bottom: 30px; }
+    #aadhaar h2 img {
+      width: 150px;
+      position: relative;
+      top: -10px;
+      margin-right: 10px; }
+  #aadhaar .know-more {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+    border-bottom: 1px solid #edc795;
+    display: inline-block;
+    transition: all 0.3s ease; }
+    #aadhaar .know-more:hover {
+      transition: all 0.3s ease;
+      border-color: #363636; }
+  #aadhaar .button {
+    background: transparent;
+    margin-right: 10px;
+    border-color: #ffdeba; }
+    #aadhaar .button:hover {
+      background: #F48F20;
+      border-color: #F48F20; }
   #aadhaar .more-info {
+    margin-top: 30px; }
+  #aadhaar .aadhaar-stats {
     margin-top: 30px; }
 
 .box {
   border: 2px solid #ffe7c8;
+  background: #ffe7c8;
   border-radius: 7px;
   padding: 30px;
   margin-top: 30px;
   transition: all 0.3s ease; }
   .box:hover {
-    background: #ffe7c8;
+    background: transparent;
     transition: all 0.3s ease; }
   .box h3 {
     font-size: 30px;
@@ -6085,14 +6150,46 @@ a {
     margin: 0px; }
 
 #digilocker {
-  padding: 80px 0px 100px 0px; }
+  padding: 80px 0px 80px 0px;
+  position: relative; }
+  #digilocker:after {
+    content: "";
+    position: absolute;
+    left: calc(50% + 15px);
+    top: 0;
+    height: 100%;
+    width: calc(50% - 15px);
+    background: url("img/stock/india-mobile.jpg");
+    z-index: -1;
+    background-size: cover;
+    background-position: center; }
   #digilocker h2 {
     font-size: 64px;
     margin-bottom: 30px; }
+    #digilocker h2 img {
+      width: 100px;
+      position: relative;
+      top: -15px;
+      margin-right: 10px; }
+  #digilocker .button {
+    margin-right: 10px;
+    margin-bottom: 0px; }
 
 #esign {
-  padding: 80px 0px 100px 0px;
-  background: #fff2e1; }
+  padding: 80px 0px 80px 0px;
+  background: #fff2e1;
+  position: relative; }
+  #esign:after {
+    content: "";
+    position: absolute;
+    right: calc(50% + 15px);
+    top: 0;
+    height: 100%;
+    width: calc(50% - 15px);
+    background: url("img/stock/india-mobile.jpg");
+    z-index: -1;
+    background-size: cover;
+    background-position: center; }
   #esign h2 {
     font-size: 64px;
     margin-bottom: 30px; }
