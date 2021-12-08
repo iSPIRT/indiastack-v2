@@ -6089,6 +6089,22 @@ header a, footer a {
   .payments-introduction .cell {
     padding-right: 30px; }
 
+.payment-section-two {
+  position: relative; }
+  .payment-section-two:after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: url("img/stock/artist.jpg");
+    z-index: 0;
+    background-size: cover;
+    background-position: right; }
+  .payment-section-two .cell {
+    padding-left: 30px; }
+
 .open-introduction {
   padding: 100px 0px 70px 0px;
   position: relative; }
@@ -6137,19 +6153,20 @@ header a, footer a {
       border-color: #F48F20; }
   #aadhaar .more-info {
     margin-top: 60px; }
-  #aadhaar .aadhaar-stats.statistics {
-    margin-top: 60px;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    padding-bottom: 50px; }
-    #aadhaar .aadhaar-stats.statistics h4 {
-      margin-bottom: 30px; }
-    #aadhaar .aadhaar-stats.statistics p.description {
-      height: auto;
-      color: #8f6a3f; }
-    #aadhaar .aadhaar-stats.statistics h3 {
-      color: #412c13; }
+
+.aadhaar-stats.statistics {
+  margin-top: 60px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  padding-bottom: 50px; }
+  .aadhaar-stats.statistics h4 {
+    margin-bottom: 30px; }
+  .aadhaar-stats.statistics p.description {
+    height: auto;
+    color: #8f6a3f; }
+  .aadhaar-stats.statistics h3 {
+    color: #412c13; }
 
 .box {
   border: 2px solid #ffe7c8;
@@ -6193,7 +6210,7 @@ header a, footer a {
 
 #npci-stats {
   background: #ffe7c8;
-  padding: 120px 0px 120px 0px; }
+  padding: 0px 0px 60px 0px; }
   #npci-stats h2 {
     margin: 0px; }
 
@@ -6308,3 +6325,9 @@ figure {
     margin-right: 5px; }
   .footer-menu a:hover {
     color: #ffffff; }
+
+.data-as-of {
+  text-align: right; }
+  .data-as-of a {
+    display: inline-block;
+    padding-top: 68px; }
