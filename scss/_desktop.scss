@@ -171,19 +171,25 @@ header a, footer a {border: none;}
 }
 
 .payments-introduction {padding: 100px 0px 70px 0px; position: relative;
-  &:after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width:50%; background: url('img/stock/payment.jpg'); z-index: -1; background-size: cover; background-position: center;}
+  &:after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width:50%; background: url('img/stock/artist.jpg'); z-index: -1; background-size: cover; background-position: center;}
   .cell {padding-right: 30px;}
 }
 
 .payment-section-two {position: relative;
-  &:after { content: ""; position: absolute; right: 50%; top: 0; height: 100%; width:50%; background: url('img/stock/artist.jpg'); z-index: 0; background-size: cover; background-position: right;}
+  &:after { content: ""; position: absolute; right: 50%; top: 0; height: 100%; width:50%; background: url('img/stock/payment.jpg'); z-index: 0; background-size: cover; background-position: right;}
   .cell {padding-left: 30px;}
 
 }
 
 .open-introduction {padding: 100px 0px 70px 0px; position: relative;
-  &:after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width:50%; background: url('img/stock/family.jpg'); z-index: -1; background-size: cover; background-position: center;}
+  &:after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width:50%; background: url('img/stock/digi.jpg'); z-index: -1; background-size: cover; background-position: center;}
   .cell {padding-right: 30px;}
+}
+
+.open-two {position: relative;
+  &:after { content: ""; position: absolute; right: 50%; top: 0; height: 100%; width:50%; background: url('img/stock/doc.jpg'); z-index: 0; background-size: cover; background-position: right;}
+  .cell {padding-left: 30px;}
+
 }
 
 #aadhaar { background: #fff2e1; padding: 80px 0px 100px 0px;
@@ -287,4 +293,20 @@ figure {padding-right: 40px; margin-bottom: 40px;
 
 .data-as-of {text-align: right;
   a {display: inline-block;    padding-top: 68px;}
+}
+
+.external-links {list-style: none; margin-left: 25px;
+  li {position: relative;}
+  li:after {content: ""; width: 20px; height: 20px; position: absolute; background-image: url("img/icons/external-link.svg"); background-size: 100%; background-position: center; opacity: 0.5; top: 4px; left: -28px;}
+}
+
+.depa-core {padding-bottom: 50px;
+  .box-wrap {border: 2px solid #ffe7c8; border-radius: 7px; padding: 20px; transition: all 0.3s ease; margin-bottom: 30px; display: flex; min-height: 170px;
+    &:hover {background: transparent; transition: all 0.3s ease;}
+    h3 {font-size: 30px; @include font-title; color: $orange; line-height: 30px; margin-bottom: 10px;}
+    .icon {text-align: left; height: 100%; width: 80px; margin-right: 20px; flex-shrink: 0;
+      img {width: 100px;}
+    }
+    p {color: #2d1800; font-size: 16px; margin: 0px;}
+  }
 }

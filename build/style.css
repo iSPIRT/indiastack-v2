@@ -6082,7 +6082,7 @@ header a, footer a {
     top: 0;
     height: 100%;
     width: 50%;
-    background: url("img/stock/payment.jpg");
+    background: url("img/stock/artist.jpg");
     z-index: -1;
     background-size: cover;
     background-position: center; }
@@ -6098,7 +6098,7 @@ header a, footer a {
     top: 0;
     height: 100%;
     width: 50%;
-    background: url("img/stock/artist.jpg");
+    background: url("img/stock/payment.jpg");
     z-index: 0;
     background-size: cover;
     background-position: right; }
@@ -6115,12 +6115,28 @@ header a, footer a {
     top: 0;
     height: 100%;
     width: 50%;
-    background: url("img/stock/family.jpg");
+    background: url("img/stock/digi.jpg");
     z-index: -1;
     background-size: cover;
     background-position: center; }
   .open-introduction .cell {
     padding-right: 30px; }
+
+.open-two {
+  position: relative; }
+  .open-two:after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: url("img/stock/doc.jpg");
+    z-index: 0;
+    background-size: cover;
+    background-position: right; }
+  .open-two .cell {
+    padding-left: 30px; }
 
 #aadhaar {
   background: #fff2e1;
@@ -6331,3 +6347,54 @@ figure {
   .data-as-of a {
     display: inline-block;
     padding-top: 68px; }
+
+.external-links {
+  list-style: none;
+  margin-left: 25px; }
+  .external-links li {
+    position: relative; }
+  .external-links li:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url("img/icons/external-link.svg");
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.5;
+    top: 4px;
+    left: -28px; }
+
+.depa-core {
+  padding-bottom: 50px; }
+  .depa-core .box-wrap {
+    border: 2px solid #ffe7c8;
+    border-radius: 7px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    display: flex;
+    min-height: 170px; }
+    .depa-core .box-wrap:hover {
+      background: transparent;
+      transition: all 0.3s ease; }
+    .depa-core .box-wrap h3 {
+      font-size: 30px;
+      font-family: 'TT Commons DemiBold';
+      font-style: normal;
+      font-weight: normal;
+      color: #F48F20;
+      line-height: 30px;
+      margin-bottom: 10px; }
+    .depa-core .box-wrap .icon {
+      text-align: left;
+      height: 100%;
+      width: 80px;
+      margin-right: 20px;
+      flex-shrink: 0; }
+      .depa-core .box-wrap .icon img {
+        width: 100px; }
+    .depa-core .box-wrap p {
+      color: #2d1800;
+      font-size: 16px;
+      margin: 0px; }

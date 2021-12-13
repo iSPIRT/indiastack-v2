@@ -135,6 +135,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/icons\/external-link.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/img\/icons\/external-link.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/icons\/github.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -345,6 +355,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/stock\/doc.jpeg" : {
+      "ft" : 16384,
+      "iS" : 269369,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/stock\/doc.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
