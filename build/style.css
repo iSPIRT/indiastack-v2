@@ -6065,7 +6065,7 @@ header a, footer a {
     top: 0;
     height: 100%;
     width: 50%;
-    background: url("img/stock/phone-laptop.jpeg");
+    background: url("img/stock/phone-laptop.jpg");
     z-index: -1;
     background-size: cover;
     background-position: center; }
@@ -6404,3 +6404,99 @@ figure {
       color: #2d1800;
       font-size: 16px;
       margin: 0px; }
+
+.mobile-menu {
+  display: none; }
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 30px;
+  height: 3px; }
+
+.hamburger-menu {
+  position: relative;
+  transform: translateY(8px);
+  background: white;
+  transition: all 0ms 300ms; }
+  .hamburger-menu.animate {
+    background: rgba(255, 255, 255, 0); }
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  background: white;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  background: white;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+@media screen and (max-width: 39.9375em) {
+  .top-bar .main-menu {
+    display: none; }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: 0px; }
+  .indiastack-is .title {
+    font-size: 58px; }
+  .indiastack-is-slider {
+    padding: 0px 20px; }
+  .indiastack-is .indiastack-is-slider .slide h3 {
+    font-size: 30px;
+    line-height: normal; }
+  .introduction {
+    padding: 50px 0px; }
+  .introduction p.highlight {
+    font-size: 18px;
+    line-height: 30px; }
+  .introduction h3 {
+    font-size: 30px;
+    line-height: normal; }
+  .resources .button {
+    padding: 10px 10px; }
+  .statistics {
+    padding-bottom: 50px; }
+  .statistics h2 {
+    font-size: 54px;
+    margin-bottom: 20px; }
+  .statistics h3 {
+    font-size: 36px; }
+  .statistics p.description {
+    font-size: 18px;
+    height: auto;
+    margin-bottom: 20px; }
+  #timeline {
+    padding: 50px 0px; }
+  #timeline .timestamp {
+    padding: 0px 20px; }
+  #timeline .timestamp h2 {
+    font-size: 58px; }
+  #timeline .timestamp p {
+    font-size: 18px; }
+  #site-footer {
+    padding: 50px 0px; }
+  #site-footer .footer-menu {
+    display: block; }
+  .footer-menu a {
+    display: block;
+    width: 100%;
+    padding-left: 0px; } }

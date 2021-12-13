@@ -166,7 +166,7 @@ header a, footer a {border: none;}
 }
 
 .data-introduction {padding: 100px 0px 70px 0px; position: relative;
-  &:after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width: 50%; background: url('img/stock/phone-laptop.jpeg'); z-index: -1; background-size: cover; background-position: center;}
+  &:after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width: 50%; background: url('img/stock/phone-laptop.jpg'); z-index: -1; background-size: cover; background-position: center;}
   .cell {padding-right: 30px;}
 }
 
