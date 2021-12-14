@@ -6616,4 +6616,25 @@ figure {
   #esign {
     padding: 50px 0px; }
   #esign .center-wrap {
-    display: none; } }
+    display: none; }
+  .payments-introduction {
+    padding: 50px 0px 320px 0px; }
+  .payments-introduction:after {
+    left: 0;
+    top: auto;
+    bottom: 0px;
+    height: 300px;
+    width: 100%; }
+  .odd-section, .even-section {
+    padding: 50px 0px; }
+  .payment-section-two {
+    padding: 50px 0px 320px 0px; }
+  .payment-section-two:after {
+    right: auto;
+    top: auto;
+    bottom: 0px;
+    height: 300px;
+    width: 100%; }
+  .data-as-of a {
+    padding-top: 0px;
+    opacity: 0.5; } }
