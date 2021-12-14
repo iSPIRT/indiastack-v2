@@ -308,7 +308,7 @@ figure {padding-right: 40px; margin-bottom: 40px;
   .box-wrap {border: 2px solid #ffe7c8; border-radius: 7px; padding: 20px; transition: all 0.3s ease; margin-bottom: 30px; display: flex; min-height: 170px;
     &:hover {background: transparent; transition: all 0.3s ease;}
     h3 {font-size: 30px; @include font-title; color: $orange; line-height: 30px; margin-bottom: 10px;}
-    .icon {text-align: left; height: 100%; width: 80px; margin-right: 20px; flex-shrink: 0;
+    .icon {text-align: left; height: 100%; width: 50px; margin-right: 20px; flex-shrink: 0;
       img {width: 100px;}
     }
     p {color: #2d1800; font-size: 16px; margin: 0px;}
