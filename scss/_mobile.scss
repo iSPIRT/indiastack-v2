@@ -2,7 +2,7 @@
 
 .mobile-menu {display: none;}
 
-$bar-width: 30px;
+$bar-width: 36px;
 $bar-height: 3px;
 $bar-spacing: 8px;
 
@@ -16,11 +16,12 @@ $bar-spacing: 8px;
 .hamburger-menu {
   position: relative;
   transform: translateY($bar-spacing);
-  background: rgba(255, 255, 255, 1);
+  background: rgba(76, 76, 76, 1);
   transition: all 0ms 300ms;
+  border-radius: 2px;
 
   &.animate {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(76, 76, 76, 0);
   }
 }
 
@@ -29,8 +30,10 @@ $bar-spacing: 8px;
   position: absolute;
   left: 0;
   bottom: $bar-spacing;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(76, 76, 76, 1);
+
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
 }
 
 .hamburger-menu:after {
@@ -38,8 +41,10 @@ $bar-spacing: 8px;
   position: absolute;
   left: 0;
   top: $bar-spacing;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(76, 76, 76, 1);
+
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
 }
 
 .hamburger-menu.animate:after {
@@ -60,7 +65,9 @@ $bar-spacing: 8px;
 @media screen and (max-width: 39.9375em) {
   .top-bar .main-menu {display: none;}
 
-  .mobile-menu {display: block; position: fixed; top: 0px; right: 0px;}
+  .top-bar {height: 60px;}
+
+  .mobile-menu {display: block; position: fixed; top: 21px; right: 15px;}
 
   .indiastack-is .title {font-size: 58px;}
 
@@ -78,12 +85,29 @@ $bar-spacing: 8px;
   .statistics h3 {font-size: 36px;}
   .statistics p.description {font-size: 18px; height: auto; margin-bottom: 20px;}
 
-  #timeline {padding: 50px 0px;}
-  #timeline .timestamp {padding: 0px 20px;}
+  #timeline {padding: 50px 0px 0px 0px;}
+  #timeline .timestamp {padding: 0px 20px 20px 20px;}
   #timeline .timestamp h2 {font-size: 58px;}
   #timeline .timestamp p {font-size: 18px;}
+  #timeline .cell {padding: 0px;}
+  #timeline .timeline-wrap {margin: 0px;}
+  #timeline .timeline-navigation .previous, #timeline .timeline-navigation .next {padding: 15px 0px;}
+  #timeline .timeline-navigation p {font-size: 14px;}
+  #timeline .timeline-navigation .previous img {margin-right: 10px; width: 10px;}
+  #timeline .timeline-navigation .next img {margin-left: 10px; width: 10px;}
 
   #site-footer {padding: 50px 0px;}
   #site-footer .footer-menu {display: block;}
-  .footer-menu a {display: block; width: 100%; padding-left: 0px;}
+  .footer-menu a {display: block; width: 100%; padding-left: 0px; margin-top: 0px;}
+  #site-footer .footer-logo {margin-bottom: 50px;}
+
+  .top-bar {overflow: visible; padding: 0px 0px;}
+  .top-bar:before {display: none;}
+  .top-bar .top-bar-left, .top-bar .top-bar-right {height: 100%;}
+  .top-bar .logo-wrap {height: 100%; display: flex; align-content: center; align-items: center; padding-left: 20px;}
+  .top-bar .logo-wrap img {height: 32px; position: relative; top: -5px;}
+  .top-bar.menu-open {border-radius: 0px; background: rgba(255,255,255,0.96);}
+  .top-bar.menu-open .main-menu {display: block; width: 100%; background: rgba(255,255,255,0.96); z-index: 999; backdrop-filter: blur(4px); box-shadow: 0px 4px 30px 0px rgba(50,25,0,0.1); padding: 20px 0px; border-radius: 0px 0px 20px 20px;}
+  .top-bar .menu a {border-bottom: 2px solid #f3f3f3;}
+  .top-bar .menu li:last-child a {border: none;}
 }

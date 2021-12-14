@@ -25,7 +25,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '40px'
+        centerPadding: '0px'
       }
     }
     ]
@@ -44,7 +44,7 @@ $(document).ready(function(){
 
   $('.mobile-menu').on('click', function() {
     $('.hamburger-menu').toggleClass('animate');
-    $('.the-mobile-menu').toggleClass('active');
+    $('.top-bar').toggleClass('menu-open');
   })
 
 });
