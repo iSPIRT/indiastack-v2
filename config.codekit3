@@ -367,7 +367,7 @@
       "oAP" : "\/build\/img\/stock\/doc.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -518,6 +518,47 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/js\/app.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/js\/app.js.map",
+      "oF" : 0
+    },
+    "\/js\/foundation.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/js\/foundation.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/js\/jquery.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/js\/jquery.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/js\/what-input.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/js\/what-input.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/node_modules" : {
       "ft" : 65536,
       "oA" : 2,
@@ -645,7 +686,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 660675431.249856
+    "lastBuiltDate" : 661194341.33587503
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
