@@ -6576,7 +6576,7 @@ figure {
     padding-top: 100px;
     padding-bottom: 40px; }
   .page-name .title {
-    font-size: 58px;
+    font-size: 50px;
     line-height: normal; }
   .box {
     padding: 20px;
@@ -6660,4 +6660,20 @@ figure {
   figure {
     padding-right: 0px;
     padding-bottom: 0px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .open-introduction {
+    padding: 50px 0px 320px 0px; }
+  .open-introduction:after {
+    left: 0;
+    top: auto;
+    bottom: 0px;
+    height: 300px;
+    width: 100%; }
+  .open-two {
+    padding: 50px 0px 320px 0px; }
+  .open-two:after {
+    right: auto;
+    top: auto;
+    bottom: 0px;
+    height: 300px;
+    width: 100%; } }

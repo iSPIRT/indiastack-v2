@@ -120,7 +120,7 @@ $bar-spacing: 8px;
     img {display: block; width: 100px;}
   }
   .page-name {padding-top: 100px; padding-bottom: 40px;}
-  .page-name .title {font-size: 58px; line-height: normal;}
+  .page-name .title {font-size: 50px; line-height: normal;}
   .box {padding: 20px; margin-top: 20px;}
 
   #aadhaar {padding: 50px 0px 50px 0px;}
@@ -156,4 +156,12 @@ $bar-spacing: 8px;
   .depa-core .box-wrap {margin-bottom: 20px;}
   .depa-core .box-wrap .icon {width: 40px;}
   figure {padding-right: 0px; padding-bottom: 0px; margin-bottom: 20px;}
+
+  .open-introduction {padding: 50px 0px 320px 0px;}
+  .open-introduction:after { left: 0; top: auto; bottom: 0px; height: 300px; width: 100%;}
+
+  .open-two {padding: 50px 0px 320px 0px;}
+  .open-two:after {right: auto; top: auto; bottom: 0px; height: 300px; width: 100%;}
+
+
 }
