@@ -6452,6 +6452,9 @@ figure {
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 @media screen and (max-width: 39.9375em) {
+  .grid-padding-x > .cell {
+    padding-right: 20px;
+    padding-left: 20px; }
   .top-bar .main-menu {
     display: none; }
   .top-bar {
@@ -6554,4 +6557,63 @@ figure {
   .top-bar .menu a {
     border-bottom: 2px solid #f3f3f3; }
   .top-bar .menu li:last-child a {
-    border: none; } }
+    border: none; }
+  .identity-introduction {
+    padding: 50px 0px 320px 0px; }
+  .identity-introduction:after {
+    left: 0;
+    top: auto;
+    bottom: 0px;
+    height: 300px;
+    width: 100%; }
+  #aadhaar h2 {
+    font-size: 42px;
+    margin-bottom: 20px; }
+    #aadhaar h2 img {
+      display: block;
+      width: 100px; }
+  .page-name {
+    padding-top: 100px;
+    padding-bottom: 40px; }
+  .page-name .title {
+    font-size: 58px;
+    line-height: normal; }
+  .box {
+    padding: 20px;
+    margin-top: 20px; }
+  #aadhaar {
+    padding: 50px 0px 50px 0px; }
+  #aadhaar .button {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px; }
+  .aadhaar-stats.statistics {
+    padding: 20px;
+    margin-top: 40px; }
+  .aadhaar-stats.statistics h4 {
+    font-size: 28px;
+    line-height: normal; }
+  .aadhaar-stats.statistics p.description {
+    margin-bottom: 40px; }
+  #digilocker {
+    padding: 50px 0px 340px 0px; }
+  #digilocker:after {
+    left: auto;
+    top: auto;
+    bottom: 0px;
+    height: 300px;
+    width: 100%; }
+  #digilocker h2 {
+    font-size: 42px;
+    margin-bottom: 20px; }
+    #digilocker h2 img {
+      display: block;
+      width: 65px; }
+  #digilocker .button {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px; }
+  #esign {
+    padding: 50px 0px; }
+  #esign .center-wrap {
+    display: none; } }
