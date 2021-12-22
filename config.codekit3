@@ -274,6 +274,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/og-image.jpg" : {
+      "ft" : 16384,
+      "iS" : 209584,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/og-image.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/play.svg" : {
       "ft" : 2097152,
       "miP" : 0,
